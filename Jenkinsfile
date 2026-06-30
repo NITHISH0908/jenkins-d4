@@ -25,6 +25,9 @@ pipeline {
                             println("Please consider learning the $course course")
                         }
                     sleep 10
+                }
+                }
+            }
 
                 stage('Build Sonar'){
                     steps{
@@ -34,7 +37,4 @@ pipeline {
                     
                 }
             }
-            }
-        
-    }
-}
+            

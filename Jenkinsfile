@@ -14,6 +14,7 @@ pipeline {
             }
         }
             stage ('scripted stage'){
+                steps{
                 echo "Scripted pipeline"
                 script {
                     def course='k8s'
@@ -25,6 +26,7 @@ pipeline {
                         }
                     
                 }
+            }
             }
         
     }

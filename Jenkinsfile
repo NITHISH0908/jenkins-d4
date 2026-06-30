@@ -24,6 +24,13 @@ pipeline {
                         else{
                             println("Please consider learning the $course course")
                         }
+                    sleep 10
+
+                stage('Build Sonar'){
+                    steps{
+                        echo "executing sonar stage"
+                    }
+                }
                     
                 }
             }

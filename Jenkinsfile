@@ -12,6 +12,7 @@ pipeline{
             steps{
                 echo "Build the maven application"
             }
+        }
             stage{
                 echo "Scripted pipeline"
                 script{

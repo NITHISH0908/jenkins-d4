@@ -1,12 +1,8 @@
-// we use tools section to auto=install packages or define path of the package
-// we can add tools sectioon under pipeline > stages > stage >tools
-
-//
-
-//pipeline > tools
-
-  pipeline{
+pipeline{
     agent any
+    tools{
+        maven 'MAVEN_PATH'
+    }
     stages{
         stage('Maven'){
             steps{
@@ -15,4 +11,4 @@
             }
         }
     }
-  }        
+  }     

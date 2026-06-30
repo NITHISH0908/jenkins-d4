@@ -14,7 +14,7 @@ pipeline{
             }
             stage{
                 echo "Scripted pipeline"
-                scrpt{
+                script{
                     def course='k8s'
                     if(course=='k8s'){
                         println("Thanks for enrolling in the $course course")
@@ -22,7 +22,7 @@ pipeline{
                         else{
                             println("Please consider learning the $course course")
                         }
-                    }
+                    
                 }
             }
         }

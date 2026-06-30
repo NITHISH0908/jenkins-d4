@@ -1,14 +1,14 @@
 pipeline{
     agent any
     stages{
-        stage('BUild'){
+        stage('Build'){
             steps{
-                echo 'Entering the build block'
-                retry(3){
-                    echo "welocome to D4"
-                    error 'Build is getting failed'
+                echo "Entering into timeout block"
+                timeout(time: 5, unit: 'SECONDS'){
+                    echo "welcome home"
+                    sleep 60
                 }
-                echo 'Build Successfully completed.'
+
             }
         }
     }
